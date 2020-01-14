@@ -66,7 +66,7 @@ router.post(
       );
     } catch (error) {
       console.error(error.message);
-      response.send(500).send("Server error");
+      response.sendStatus(500).send("Server error");
     }
   }
 );
