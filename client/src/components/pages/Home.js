@@ -1,9 +1,13 @@
 import React from "react";
+import { Contacts } from "../contacts/Contacts";
 
 export const Home = () => {
   return (
-    <div className='container'>
-      <h1>Home</h1>
+    <div className='grid-2'>
+      <div></div>
+      <div>
+        <Contacts />
+      </div>
     </div>
   );
 };
