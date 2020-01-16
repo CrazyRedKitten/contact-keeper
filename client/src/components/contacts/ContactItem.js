@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 export const ContactItem = ({ contact }) => {
   const { id, name, email, type, phone } = contact;
@@ -27,6 +28,14 @@ export const ContactItem = ({ contact }) => {
           </li>
         )}
       </ul>
+      <p>
+        <button className='btn btn-dark btn-sm'>Edit</button>
+        <button className='btn btn-danger btn-sm'>Delete</button>
+      </p>
     </div>
   );
+};
+
+ContactItem.propTypes = {
+  contact: PropTypes.object.isRequired
 };
