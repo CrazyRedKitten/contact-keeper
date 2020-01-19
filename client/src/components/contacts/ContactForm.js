@@ -1,5 +1,6 @@
 import React, { useState, useContext, useEffect } from "react";
 import ContactContext from "../../context/contact/contactContext";
+import { CLEAR_CONTACTS } from "../../context/types";
 
 export const ContactForm = () => {
   const contactContext = useContext(ContactContext);
@@ -38,12 +39,7 @@ export const ContactForm = () => {
     } else {
       updateContact(contact);
     }
-    setContact({
-      name: "",
-      email: "",
-      phone: "",
-      type: "personal"
-    });
+    clearAll();
   };
 
   const clearAll = () => {
