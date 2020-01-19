@@ -1,7 +1,5 @@
 node_modules/ 
 
-/client/build
-
 .DS_Store
 /client/.env.local
 /client/.env.development.local
