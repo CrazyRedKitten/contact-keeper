@@ -1,4 +1,7 @@
-node_modules/ 
+node_modules/
+/config/production.json
+
+/client/build
 
 .DS_Store
 /client/.env.local
